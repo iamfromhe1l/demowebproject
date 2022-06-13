@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Page Title</title>
+
+<link rel="stylesheet" href='{% static "css/css.css" %}'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    
+    img { pointer-events: none; }
+    </style>
+<script>
+function myFunction(){
+let a0 = document.getElementById("0").value;
+let a1 = document.getElementById("1").value;
+let a2 = document.getElementById("2").value;
+let a3 = document.getElementById("3").value;
+let a4 = document.getElementById("4").value;
+
+if (a0=='') a0 = "0";
+if (a1=='') a1 = "0";
+if (a2=='') a2 = "0";
+if (a3=='') a3 = "0";
+if (a4=='') a4 = "0";
+
+
+
+window.location.pathname = '/p_data/'+a0+'/'+a1+'/'+a2+'/'+a3+'/'+a4;
+}
+function save(){
+  window.location.pathname = '/save';
+}
+</script>
+<body style="background-color: #9c9b9b">
+    
+   <img src='{% static "img/Hui3empty.png" %}'>
+    <a href="/home/" class="hbuttons" >
+        Home
+    </a>
+    <button class="savexlsx" onclick="save()" >Сохран в xlsx</button>
+
+       <a href="/stroika/" class="h2buttons">Строительные работы</a> 
+       <a href="/electr/" class="h3buttons">Электромонтажные работы</a>           
+       <a href="/pol/" class="h4buttons">Полы</a>
+        
+       <a href="/others/" class="h5buttons">Прочие</a> 
+
+       <box class="textbox"> 
+        <form>
+        <a> 
+         
+     <input name="reset" type="reset" value="Очистить поля" class="reset" />
+     <input name="blockchecknum1" type="number" placeholder="кв.м" class="primebox1" defaultValue = "0" id="0">   
+     <input name="blockchecknum1" type="number" placeholder="Пм" class="primebox2" defaultValue = "0" id="1">
+     <input name="blockchecknum1" type="number" placeholder="Пм" class="primebox3" defaultValue = "0" id="2">
+     <input name="blockchecknum1" type="number" placeholder="кв.м" class="primebox4" defaultValue = "0" id="3"> 
+     <input name="blockchecknum1" type="number" placeholder="кв.м" class="primebox5" defaultValue = "0" id="4">   
+    
+     <box2 class="boxform">
+     </a>
+        </form>
+        
+<p class="text" >
+  <br>
+Грунтовка пола
+ 
+ </br>
+ <br>
+Установка плинтусов (полиуретановые)
+</br>
+ <br>
+ Установка теневого профиля
+</br>
+ <br>
+ Плитка напольная крупноформатная
+</br>
+ <br>
+ Укладка ламината
+</br>
+ 
+
+
+
+</p>
+
+<a class="textbrige" ></a>
+<a class="textbrige1" ></a>
+<button class="save" onclick="myFunction()">Сохранить</button>
+</body>
+</html>

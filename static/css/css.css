@@ -1,0 +1,569 @@
+
+a.hbuttons
+{
+    /* Кнопка */
+
+
+width: 45px;
+height: 19px;
+
+
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #b4b4b4;
+-webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 68px;
+    height: 38px;
+    left: 31px;
+    top: 25px;
+    
+    border-radius: 37px;
+}
+.hbuttons:hover
+{
+color: aliceblue;
+}
+
+
+
+
+a.h2buttons
+{
+    /* Кнопка */
+
+
+width: 90px;
+height: 70px;
+
+
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #b4b4b4;
+-webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    left: 45px;
+    top: 140px;
+    
+    border-radius: 10px;
+    background-color:rgb(36, 45, 75); ;
+}
+.h2buttons:hover
+{
+color: rgb(255, 255, 255);
+}
+
+
+
+a.h3buttons
+{
+    /* Кнопка */
+
+
+width: 90px;
+height: 70px;
+
+
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #b4b4b4;
+-webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    left: 45px;
+    top: 225px;
+    
+    border-radius: 10px;
+    background-color:rgb(36, 45, 75); ;
+}
+.h3buttons:hover
+{
+color: rgb(255, 255, 255);
+}
+
+a.h4buttons
+{
+    /* Кнопка */
+
+
+width: 90px;
+height: 70px;
+
+
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #b4b4b4;
+-webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    left: 45px;
+    top: 315px;
+    
+    border-radius: 10px;
+    background-color:rgb(36, 45, 75); ;
+}
+.h4buttons:hover
+{
+color: rgb(255, 255, 255);
+}
+
+a.h5buttons
+{
+    /* Кнопка */
+
+
+width: 90px;
+height: 70px;
+
+
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #b4b4b4;
+-webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 290px;
+    height: 60px;
+    left: 45px;
+    top: 405px;
+    
+    border-radius: 10px;
+    background-color:rgb(36, 45, 75); ;
+}
+a.h5buttons:hover
+{
+color: rgb(255, 255, 255);
+}
+
+
+.textbrige
+{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 760px;
+    height: 34px;
+    left: 40px;
+    top: 31px;
+    
+    background: #1e183b;
+    border-radius: 7px;
+    z-index: -3; 
+}
+.textbrige1
+{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 760px;
+    height: 34px;
+    left: 40px;
+    top: 147px;
+    
+    background: #1e183b;
+    border-radius: 7px;
+    z-index: -3; 
+}
+.textbrige2
+{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 760px;
+    height: 50px;
+    left: 40px;
+    top: 260px;
+    
+    background: #1e183b;
+    border-radius: 7px;
+    z-index: -3;     
+}
+.textbrige3
+{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 760px;
+    height: 34px;
+    left: 40px;
+    top: 392px;
+    
+    background: #1e183b;
+    border-radius: 7px;
+    z-index: -3;     
+}
+.textbox
+{
+/* Frame 8 +*/
+
+
+
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 1034px;
+height: 629px;
+left: 487px;
+top: 298px;
+
+background: #535353;
+border-radius: 10px;
+z-index:99;
+}
+
+.text
+{
+/* Frame 8 -*/
+ 
+font-style: normal;
+font-weight: 40;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: left;
+text-align: left;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #ffffff;
+width: 600px;
+height: 460px;
+margin-left: 60px;
+
+top: 298px;
+z-index: 102;
+border-radius: 5px;
+
+
+
+}
+
+
+
+    .primebox1
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 35px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+
+.primebox2
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 74px;
+    border-radius: 10px;
+    background: #cecece
+    
+}
+.primebox3
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 115px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox4
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 152px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox5
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 188px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox6
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 224px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox7
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 265px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox8
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 322px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox9
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 359px;
+    
+    background: #cecece;
+    border-radius: 10px;
+}
+.primebox10
+{
+    position: absolute;
+    width: 100px;
+    height: 19px;
+    left: 800px;
+    top: 395px;
+    
+    background: #cecece;
+    border-radius: 10px;
+    z-index: 2;
+}
+.reset
+{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    width: 107px;
+    height: 26px;
+    left: 800px;
+    top: 450px;
+    
+    background: #c2c2c2;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+}
+.reset:hover
+{
+    background: #ebebeb;   
+}
+.boxform
+{
+    justify-content: center;
+align-items: center;
+position: absolute;
+width: 120px;
+height: 629px;
+left: 792px;
+top: 0px;
+
+background: #1e183b;
+border-radius: -1px;
+z-index: -1;
+}
+
+
+.save
+{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    width: 107px;
+    height: 26px;
+    left: 800px;
+    top: 500px;
+    z-index: 999999999;
+    
+    background: #c2c2c2;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+}
+.save:hover
+{
+    background: #ebebeb;  
+}
+
+
+.savexlsx
+{
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    width: 107px;
+    height: 26px;
+    left: 1287px;
+    top: 850px;
+    z-index: 999999999;
+    
+    background: #c2c2c2;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; 
+}
+.savexlsx:hover
+{
+    background: #ebebeb;  
+}

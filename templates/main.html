@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	
+{% load static %}
+<html>
+<head>
+<title>Page Title</title>
+
+<link rel="stylesheet" href='{% static "css/css.css" %}'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    
+    img { pointer-events: none; }
+    </style>
+<body style="background-color: #9c9b9b">
+    
+    <img src='{% static "img/Frame 1.png" %}' >
+    <a href="/home/" class="hbuttons" >
+        Home
+    </a>
+
+       <a href="/stroika/" class="h2buttons">Строительные работы</a> 
+       <a href="/electr/" class="h3buttons">Электромонтажные работы</a>           
+       <a href="/pol/" class="h4buttons">Полы</a>
+        
+       <a href="/others/" class="h5buttons">Прочие</a> 
+</body>
+</html>
