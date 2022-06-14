@@ -6,7 +6,6 @@ from firstapp import views
 urlpatterns = [
     path('', views.main, name='home'),
     path('home/', views.main, name='home'),
-    path('stroika/', views.stroika, name='strioka'),
     path('electr/', views.electr, name='electr'),
     path('pol/', views.pol, name='pol'),
     path('others/', views.others, name='other'),
