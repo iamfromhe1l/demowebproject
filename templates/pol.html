@@ -2,15 +2,11 @@
 {% load static %}
 <html>
 <head>
-<title>webproject</title>
-
-<link rel="stylesheet" href='{% static "css/css.css" %}'>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>webproject</title>
+    <link rel="stylesheet" href='{% static "css/css.css" %}'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<style>
-    img { pointer-events: none; }
-</style>
+<script src='{% static "js/app.js" %}'></script>
 <body>
     <header>
         <a href="/">Строительные работы</a>
@@ -28,22 +24,20 @@
                 <tr calss = "ctgtr">
                     <td class="itemstr">{{ elem.0 }}</td>
                     <td class="inputtd">
-                        <input type="number" calss="inputstr" placeholder={{ elem.1 }}>
+                        <input type="number" class="inputstr" placeholder={{ elem.1 }}>
                     </td>
                 </tr>
             {% endfor %}
-            <script>
-                let elemmas = document.getElementsByTagName('tr');
-                for (let i = 0; i < elemmas.length; i++) {
-                    if (i % 2 == 0) {
-                        elemmas[i].style.backgroundColor = '#303e3a';
-                    }
-                    else {
-                        elemmas[i].style.backgroundColor = '#3b4f3c';
-                    }
-                }
-            </script>
+            <script>gradColor()</script>
         </table>
+        <div class="sformdiv">
+            <form method="POST">
+                {% csrf_token %}
+                <div style="display: none;">{{ sform }}</div>
+                <input type="submit" class="sbutton" name="savevals" value="Сохранить" onclick="getElemVals()">
+                <input type="submit" class="sbutton" name="resetvals" value="Очистить" onclick="resetElemVals()">
+            </form>
+        </div>
     </div>
     <div class="catalog" style="text-align: center">
         <div class="formdiv">
@@ -53,13 +47,10 @@
                 <table class="tbaddem">
                     {{ form }}
                 </table>
-                <input type="submit" class="button" value="Отправить">
+                <input type="submit" class="button" name="addnewelem" value="Отправить">
             </form>
         </div>
-        <script>
-            document.getElementById('id_name').setAttribute('placeholder', 'Название товара');
-            document.getElementById('id_type').setAttribute('placeholder', 'Измерение(шт, кв.м и т.д.)');
-        </script>
+        <script>defPhAdd()</script>
     </div>
 </body>
 </html>

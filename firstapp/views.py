@@ -113,6 +113,28 @@ def GetQwerySetTOListElementsBySTR(str1):
             liststritems.append([elem['name'], elem['type']])
     return liststritems
 
+def SetValuesToSQLElements(str1, mas):
+    stritems = Person.objects.values()
+    i = 0
+    for elem in stritems:
+        str = elem['str']
+        if str == str1:
+            item = Person.objects.get(id=elem['id'])
+            item.value += mas[i]
+            item.save(update_fields=["value"])
+            i += 1
+
+def ResetValuesSQLElements(str1):
+    stritems = Person.objects.values()
+    i = 0
+    for elem in stritems:
+        str = elem['str']
+        if str == str1:
+            item = Person.objects.get(id=elem['id'])
+            item.value = 0
+            item.save(update_fields=["value"])
+            i += 1
+
 def main(request):
     str = 1
     
@@ -120,10 +142,16 @@ def main(request):
     userform = UserForm()
     scrform = SecretForm()
     if request.method == 'POST':
-        name = request.POST.get("name")
-        type = request.POST.get("type")
-        item = Person(name=name, type=type, str=str, value=0)
-        item.save()
+        if 'addnewelem' in request.POST:
+            name = request.POST.get("name")
+            type = request.POST.get("type")
+            item = Person(name=name, type=type, str=str, value=0)
+            item.save()
+        elif 'savevals' in request.POST:
+            mas = list(map(int, request.POST.get("mas").split()))
+            SetValuesToSQLElements(str, mas)
+        elif 'resetvals' in request.POST:
+            ResetValuesSQLElements(str)
     data = {
         'stritems': GetQwerySetTOListElementsBySTR(str),
         'form': userform,
@@ -136,15 +164,22 @@ def electr(request):
     
     # form
     userform = UserForm()
+    scrform = SecretForm()
     if request.method == 'POST':
-        name = request.POST.get("name")
-        type = request.POST.get("type")
-        item = Person(name=name, type=type, str=str, value=0)
-        item.save()
-        
+        if 'addnewelem' in request.POST:
+            name = request.POST.get("name")
+            type = request.POST.get("type")
+            item = Person(name=name, type=type, str=str, value=0)
+            item.save()
+        elif 'savevals' in request.POST:
+            mas = list(map(int, request.POST.get("mas").split()))
+            SetValuesToSQLElements(str, mas)
+        elif 'resetvals' in request.POST:
+            ResetValuesSQLElements(str)
     data = {
         'stritems': GetQwerySetTOListElementsBySTR(str),
-        'form': userform
+        'form': userform,
+        'sform': scrform
     }
     return render(request, "electr.html", context=data)
 def pol(request):
@@ -152,15 +187,22 @@ def pol(request):
     
     # form
     userform = UserForm()
+    scrform = SecretForm()
     if request.method == 'POST':
-        name = request.POST.get("name")
-        type = request.POST.get("type")
-        item = Person(name=name, type=type, str=str, value=0)
-        item.save()
-    
+        if 'addnewelem' in request.POST:
+            name = request.POST.get("name")
+            type = request.POST.get("type")
+            item = Person(name=name, type=type, str=str, value=0)
+            item.save()
+        elif 'savevals' in request.POST:
+            mas = list(map(int, request.POST.get("mas").split()))
+            SetValuesToSQLElements(str, mas)
+        elif 'resetvals' in request.POST:
+            ResetValuesSQLElements(str)
     data = {
         'stritems': GetQwerySetTOListElementsBySTR(str),
-        'form': userform
+        'form': userform,
+        'sform': scrform
     }
     return render(request, "pol.html", context=data)
 def others(request):
@@ -168,15 +210,22 @@ def others(request):
     
     # form
     userform = UserForm()
+    scrform = SecretForm()
     if request.method == 'POST':
-        name = request.POST.get("name")
-        type = request.POST.get("type")
-        item = Person(name=name, type=type, str=str, value=0)
-        item.save()
-    
+        if 'addnewelem' in request.POST:
+            name = request.POST.get("name")
+            type = request.POST.get("type")
+            item = Person(name=name, type=type, str=str, value=0)
+            item.save()
+        elif 'savevals' in request.POST:
+            mas = list(map(int, request.POST.get("mas").split()))
+            SetValuesToSQLElements(str, mas)
+        elif 'resetvals' in request.POST:
+            ResetValuesSQLElements(str)
     data = {
         'stritems': GetQwerySetTOListElementsBySTR(str),
-        'form': userform
+        'form': userform,
+        'sform': scrform
     }
     return render(request, "other.html", context=data)
 

@@ -2,9 +2,6 @@ body {
     background-color: #EFEAD8;
 }
 
-
-
-
 @media (min-width: 1010px) {
     header {
         width: 20%;
