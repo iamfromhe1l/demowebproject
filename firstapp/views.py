@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django import forms
 from .forms import UserForm
+from .forms import SecretForm
 import io
 from django.http import FileResponse
 import pandas as pd
@@ -115,10 +116,9 @@ def GetQwerySetTOListElementsBySTR(str1):
 def main(request):
     str = 1
     
-    
-    
     # form
     userform = UserForm()
+    scrform = SecretForm()
     if request.method == 'POST':
         name = request.POST.get("name")
         type = request.POST.get("type")
@@ -126,9 +126,11 @@ def main(request):
         item.save()
     data = {
         'stritems': GetQwerySetTOListElementsBySTR(str),
-        'form': userform
+        'form': userform,
+        'sform': scrform
     }
     return render(request, "main.html", context=data)
+
 def electr(request):
     str = 2
     

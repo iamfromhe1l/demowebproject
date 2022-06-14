@@ -11,16 +11,15 @@
 <style>
     img { pointer-events: none; }
 </style>
+<script srt='{% static "js/app.js" %}'></script>
 
-<header>
-    <nav>
+<body>
+    <header>
         <a href="/" class="activeheader">Строительные работы</a>
         <a href="/electr/">Электромонтажные работы</a>
         <a href="/pol/">Полы</a>
         <a href="/others/">Прочие</a>
-    </nav>
-</header>
-<body>
+    </header>
     <div class="catalog">
         <table class="ctgtable">
             <tr>
@@ -39,19 +38,26 @@
                 let elemmas = document.getElementsByTagName('tr');
                 for (let i = 0; i < elemmas.length; i++) {
                     if (i % 2 == 0) {
-                        elemmas[i].style.backgroundColor = '#423f53';
+                        elemmas[i].style.backgroundColor = '#303e3a';
                     }
                     else {
-                        elemmas[i].style.backgroundColor = '#6b6786';
+                        elemmas[i].style.backgroundColor = '#3b4f3c';
                     }
                 }
             </script>
         </table>
+        <div class="sformdiv">
+            <form method="POST1">
+                {% csrf_token %}
+                <div style="display: none;">{{ sform }}</div>
+                <input type="submit" class="sbutton" value="Сохранить">
+            </form>
+        </div>
     </div>
     <div class="catalog" style="text-align: center">
         <div class="formdiv">
             <h2>Добавить новый элемент</h2>
-            <form method="POST">
+            <form method="POST" class="form2">
                 {% csrf_token %}
                 <table class="tbaddem">
                     {{ form }}
