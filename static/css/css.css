@@ -160,3 +160,7 @@ table #id_name {
 table #id_type {
     width: 100%;
 }
+
+.tgtable .itogpricetr {
+    width: 100%;
+}

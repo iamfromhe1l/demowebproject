@@ -16,6 +16,7 @@ function gradColor() {
 function defPhAdd() {
     document.getElementById('id_name').setAttribute('placeholder', 'Название товара');
     document.getElementById('id_type').setAttribute('placeholder', 'Измерение(шт, кв.м и т.д.)');
+    document.getElementById('id_ratio').setAttribute('placeholder', 'Коэфициент(цена за шт и т.д.)');
 }
 
 function getElemVals() {
@@ -39,4 +40,8 @@ function resetElemVals() {
         vals += '0 '
     }
     document.getElementById('id_mas').value = vals;
+}
+
+function resetCartVals() {
+    document.getElementById('id_mas').value = '0';
 }

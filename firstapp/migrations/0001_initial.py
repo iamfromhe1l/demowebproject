@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('type', models.CharField(max_length=10)),
                 ('str', models.IntegerField()),
                 ('value', models.IntegerField()),
+                ('ratio', models.IntegerField()),
             ],
         ),
     ]
